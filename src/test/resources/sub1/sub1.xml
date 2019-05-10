@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>  <!-- -*- nxml -*- -->
+<!DOCTYPE section>
+<section xmlns="http://docbook.org/ns/docbook"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         version="5.0" xml:lang="en">
+  <title>A Section</title>
+
+  <para>Some section that includes another section</para>
+  <figure>
+    <title>The Pythagorean Theorem Illustrated</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/db5d_ref01.png"/>
+      </imageobject>
+      <textobject>
+        <phrase>An illustration of the Pythagorean Theorem, included from sub1</phrase>
+      </textobject>
+    </mediaobject>
+  </figure>
+
+  <xi:include href="sub2/sub2.xml"/>
+</section>

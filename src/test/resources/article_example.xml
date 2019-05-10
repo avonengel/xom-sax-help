@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>  <!-- -*- nxml -*- -->
+<!DOCTYPE article>
+<article xmlns="http://docbook.org/ns/docbook"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         version="5.0" xml:lang="en">
+  <info>
+    <title>xml:base example</title>
+
+    <authorgroup>
+      <author>
+        <personname>Axel von Engel</personname>
+        <email>a.vonengel@gmail.com</email>
+      </author>
+    </authorgroup>
+  </info>
+
+  <para>This document shows various issues with nested
+    <literal>&lt;xi:include /&gt;</literal>
+  </para>
+
+  <para>The following image will be included from all levels of nested <literal>&lt;xi:include /&gt;</literal>:
+  </para>
+
+  <figure>
+    <title>The Pythagorean Theorem Illustrated</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/db5d_ref01.png"/>
+      </imageobject>
+      <textobject>
+        <phrase>An illustration of the Pythagorean Theorem, included from preamble</phrase>
+      </textobject>
+    </mediaobject>
+  </figure>
+
+  <xi:include href="sub1/sub1.xml"/>
+</article>
